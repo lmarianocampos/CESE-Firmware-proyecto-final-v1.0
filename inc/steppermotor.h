@@ -30,7 +30,7 @@ extern "C" {
 #define SIZEQUEUEPULSE   3
 #define SIZEQUEUEPULSESERVO 5
 #define AUTO_RELOAD_TIMER_PERIODO pdMS_TO_TICKS(100)//T=2*10=20mseg
-#define AUTO_RELOAD_TIMER_PERIODO_SERVO pdMS_TO_TICKS(20)//T=2*100 = 200mseg
+#define AUTO_RELOAD_TIMER_PERIODO_SERVO pdMS_TO_TICKS(10)//T=2*100 = 200mseg
 /*=====[Public function-like macros]=========================================*/
 /*=====[Definitions of public data types]====================================*/
 typedef enum{

@@ -69,19 +69,20 @@ void adcScanChannelTask(void * taskParmPtr) {
 				pid.sensorPresion += adcRead(CH1);
 			}
 			pid.sensorPresion = pid.sensorPresion/FILTRO_PROMEDIO_MOVIL;
-			pid.inPut = pid.sensorPresion * 0.00322;// convierto a tensión ymultiplico por 100
+			pid.inPut = pid.sensorPresion * 0.00322;// convierto a tensión y multiplico por 100
 			pid.sensorPresion = 0;
 
 			pid.error= pid.setPoint - pid.inPut;
-			if((pid.error <= 0.00324) && (pid.error >= -0.00324)) pid.error = 0.0000;
+			if((pid.error <= 0.00322) && (pid.error >= -0.00322)) pid.error = 0.00000;
 			//printf("Set-Point:%.5f\n",pid.setPoint);
 
 
 			pid.iTerm +=(pid.ki*pid.error);
 			if (pid.iTerm > pid.outMax)pid.iTerm = pid.outMax;
 			if (pid.iTerm < pid.outMin)pid.iTerm = pid.outMin;
+            //pid.iTerm=0.0000;
+			pid.outPut =  pid.kp * pid.error + pid.iTerm;
 
-			pid.outPut = pid.kp * pid.error + pid.iTerm;
 			if (pid.outPut > pid.outMax)pid.outPut = pid.outMax;
 			if (pid.outPut < pid.outMin)pid.outPut = pid.outMin;
 			index=0;
@@ -90,6 +91,7 @@ void adcScanChannelTask(void * taskParmPtr) {
 				printf("Error:%.5f\n",pid.error);
 				printf("Salida OutPut:%.5f\n", pid.outPut);
 				printf("Potenciometro del eje:%.5f\n", servo.potentiometer);
+				printf("Sensor de presion:%.5f\n", pid.inPut);
 				//fflush(stdout);
 			//taskEXIT_CRITICAL();
 
@@ -105,7 +107,7 @@ void adcScanChannelTask(void * taskParmPtr) {
 
 			servo.potentiometer = channel2 *0.00322;//convierto a tensión
 			           //
-			if(pid.outPut -4*0.00322> servo.potentiometer){//Abre la valvula
+			if(pid.outPut -2*0.00322> servo.potentiometer){//Abre la valvula
 				if(servo.flagCompA == TRUE){
 					//detengo al motor
 					servo.flagPulse=FALSE;
@@ -123,7 +125,7 @@ void adcScanChannelTask(void * taskParmPtr) {
 				}
 
 			}else{     //
-				if(pid.outPut+4*0.00322<servo.potentiometer){ //Cierra la valvula
+				if(pid.outPut+2*0.00322<servo.potentiometer){ //Cierra la valvula
 					if(servo.flagCompB == TRUE){
 						//detengo al motor
 							servo.flagPulse=FALSE;

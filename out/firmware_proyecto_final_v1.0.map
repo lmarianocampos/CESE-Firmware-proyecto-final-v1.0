@@ -20385,7 +20385,7 @@ END GROUP
  *(.rodata.$Flash2*)
  *(.rodata.$MFlashB512*)
 
-.text           0x000000001a000000     0xabc4
+.text           0x000000001a000000     0xac1c
  FILL mask 0xff
                 0x000000001a000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -20398,19 +20398,19 @@ END GROUP
                 0x000000001a000114                . = ALIGN (0x4)
                 0x000000001a000114                __section_table_start = .
                 0x000000001a000114                __data_section_table = .
-                0x000000001a000114        0x4 LONG 0x1a00abd0 LOADADDR (.data)
+                0x000000001a000114        0x4 LONG 0x1a00ac28 LOADADDR (.data)
                 0x000000001a000118        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000001a00011c        0x4 LONG 0xa74 SIZEOF (.data)
-                0x000000001a000120        0x4 LONG 0x1a00abd0 LOADADDR (.data_RAM2)
+                0x000000001a000120        0x4 LONG 0x1a00ac28 LOADADDR (.data_RAM2)
                 0x000000001a000124        0x4 LONG 0x10080000 ADDR (.data_RAM2)
                 0x000000001a000128        0x4 LONG 0x0 SIZEOF (.data_RAM2)
-                0x000000001a00012c        0x4 LONG 0x1a00abd0 LOADADDR (.data_RAM3)
+                0x000000001a00012c        0x4 LONG 0x1a00ac28 LOADADDR (.data_RAM3)
                 0x000000001a000130        0x4 LONG 0x20000000 ADDR (.data_RAM3)
                 0x000000001a000134        0x4 LONG 0x0 SIZEOF (.data_RAM3)
-                0x000000001a000138        0x4 LONG 0x1a00abd0 LOADADDR (.data_RAM4)
+                0x000000001a000138        0x4 LONG 0x1a00ac28 LOADADDR (.data_RAM4)
                 0x000000001a00013c        0x4 LONG 0x20008000 ADDR (.data_RAM4)
                 0x000000001a000140        0x4 LONG 0x0 SIZEOF (.data_RAM4)
-                0x000000001a000144        0x4 LONG 0x1a00abd0 LOADADDR (.data_RAM5)
+                0x000000001a000144        0x4 LONG 0x1a00ac28 LOADADDR (.data_RAM5)
                 0x000000001a000148        0x4 LONG 0x2000c000 ADDR (.data_RAM5)
                 0x000000001a00014c        0x4 LONG 0x0 SIZEOF (.data_RAM5)
                 0x000000001a000150                __data_section_table_end = .
@@ -20565,900 +20565,902 @@ END GROUP
                 0x000000001a000e90                adcStart
  *fill*         0x000000001a000e9a        0x6 ff
  .text.adcScanChannelTask
-                0x000000001a000ea0      0x308 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
+                0x000000001a000ea0      0x314 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
                 0x000000001a000ea0                adcScanChannelTask
  .text.initialise_monitor_handles
-                0x000000001a0011a8        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a0011a8                initialise_monitor_handles
- *fill*         0x000000001a0011aa        0x2 ff
+                0x000000001a0011b4        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a0011b4                initialise_monitor_handles
+ *fill*         0x000000001a0011b6        0x2 ff
  .text.Reset_Handler
-                0x000000001a0011ac       0x88 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a0011ac                Reset_Handler
- .text._fini    0x000000001a001234        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a001234                _fini
- .text._init    0x000000001a001236        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a001236                _init
+                0x000000001a0011b8       0x88 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a0011b8                Reset_Handler
+ .text._fini    0x000000001a001240        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a001240                _fini
+ .text._init    0x000000001a001242        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a001242                _init
  .text._close_r
-                0x000000001a001238        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a001238                _close_r
+                0x000000001a001244        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a001244                _close_r
  .text._fstat_r
-                0x000000001a001242        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a001242                _fstat_r
+                0x000000001a00124e        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a00124e                _fstat_r
  .text._isatty_r
-                0x000000001a00124c       0x12 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a00124c                _isatty_r
+                0x000000001a001258       0x12 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a001258                _isatty_r
  .text._lseek_r
-                0x000000001a00125e        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a00125e                _lseek_r
- .text._read_r  0x000000001a001268       0x4e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a001268                _read_r
+                0x000000001a00126a        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a00126a                _lseek_r
+ .text._read_r  0x000000001a001274       0x4e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a001274                _read_r
  .text._write_r
-                0x000000001a0012b6       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a0012b6                _write_r
- *fill*         0x000000001a0012de        0x2 ff
- .text._sbrk_r  0x000000001a0012e0       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a0012e0                _sbrk_r
+                0x000000001a0012c2       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a0012c2                _write_r
+ *fill*         0x000000001a0012ea        0x2 ff
+ .text._sbrk_r  0x000000001a0012ec       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a0012ec                _sbrk_r
  .text.prvHeapInit
-                0x000000001a001300       0x64 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
+                0x000000001a00130c       0x64 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
  .text.prvInsertBlockIntoFreeList
-                0x000000001a001364       0x58 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
+                0x000000001a001370       0x58 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
  .text.pvPortMalloc
-                0x000000001a0013bc      0x11c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
-                0x000000001a0013bc                pvPortMalloc
+                0x000000001a0013c8      0x11c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
+                0x000000001a0013c8                pvPortMalloc
  .text.vPortFree
-                0x000000001a0014d8       0x70 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
-                0x000000001a0014d8                vPortFree
+                0x000000001a0014e4       0x70 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
+                0x000000001a0014e4                vPortFree
  .text.prvIsQueueFull
-                0x000000001a001548       0x1e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001554       0x1e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
  .text.prvIsQueueEmpty
-                0x000000001a001566       0x1a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001572       0x1a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
  .text.prvCopyDataToQueue
-                0x000000001a001580       0x76 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a00158c       0x76 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
  .text.prvCopyDataFromQueue
-                0x000000001a0015f6       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001602       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
  .text.prvUnlockQueue
-                0x000000001a00161a       0x6e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001626       0x6e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
  .text.xQueueGenericReset
-                0x000000001a001688       0x84 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a001688                xQueueGenericReset
+                0x000000001a001694       0x84 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001694                xQueueGenericReset
  .text.prvInitialiseNewQueue
-                0x000000001a00170c       0x22 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001718       0x22 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
  .text.xQueueGenericCreateStatic
-                0x000000001a00172e       0x90 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a00172e                xQueueGenericCreateStatic
+                0x000000001a00173a       0x90 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a00173a                xQueueGenericCreateStatic
  .text.xQueueGenericCreate
-                0x000000001a0017be       0x4e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a0017be                xQueueGenericCreate
+                0x000000001a0017ca       0x4e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a0017ca                xQueueGenericCreate
  .text.xQueueGenericSend
-                0x000000001a00180c      0x17c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a00180c                xQueueGenericSend
+                0x000000001a001818      0x17c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001818                xQueueGenericSend
  .text.xQueueGenericSendFromISR
-                0x000000001a001988       0xcc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a001988                xQueueGenericSendFromISR
+                0x000000001a001994       0xcc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001994                xQueueGenericSendFromISR
  .text.xQueueReceive
-                0x000000001a001a54      0x158 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a001a54                xQueueReceive
+                0x000000001a001a60      0x158 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001a60                xQueueReceive
  .text.vQueueAddToRegistry
-                0x000000001a001bac       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a001bac                vQueueAddToRegistry
+                0x000000001a001bb8       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001bb8                vQueueAddToRegistry
  .text.vQueueWaitForMessageRestricted
-                0x000000001a001bd4       0x52 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
-                0x000000001a001bd4                vQueueWaitForMessageRestricted
+                0x000000001a001be0       0x52 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+                0x000000001a001be0                vQueueWaitForMessageRestricted
  .text.vListInitialise
-                0x000000001a001c26       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
-                0x000000001a001c26                vListInitialise
+                0x000000001a001c32       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+                0x000000001a001c32                vListInitialise
  .text.vListInitialiseItem
-                0x000000001a001c3c        0x6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
-                0x000000001a001c3c                vListInitialiseItem
+                0x000000001a001c48        0x6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+                0x000000001a001c48                vListInitialiseItem
  .text.vListInsertEnd
-                0x000000001a001c42       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
-                0x000000001a001c42                vListInsertEnd
+                0x000000001a001c4e       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+                0x000000001a001c4e                vListInsertEnd
  .text.vListInsert
-                0x000000001a001c5a       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
-                0x000000001a001c5a                vListInsert
+                0x000000001a001c66       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+                0x000000001a001c66                vListInsert
  .text.uxListRemove
-                0x000000001a001c8e       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
-                0x000000001a001c8e                uxListRemove
- *fill*         0x000000001a001cb6        0x2 ff
+                0x000000001a001c9a       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+                0x000000001a001c9a                uxListRemove
+ *fill*         0x000000001a001cc2        0x2 ff
  .text.vApplicationGetIdleTaskMemory
-                0x000000001a001cb8       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
-                0x000000001a001cb8                vApplicationGetIdleTaskMemory
+                0x000000001a001cc4       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
+                0x000000001a001cc4                vApplicationGetIdleTaskMemory
  .text.vApplicationGetTimerTaskMemory
-                0x000000001a001cd0       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
-                0x000000001a001cd0                vApplicationGetTimerTaskMemory
+                0x000000001a001cdc       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
+                0x000000001a001cdc                vApplicationGetTimerTaskMemory
  .text.vAssertCalled
-                0x000000001a001ce8       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
-                0x000000001a001ce8                vAssertCalled
+                0x000000001a001cf4       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+                0x000000001a001cf4                vAssertCalled
  .text.vApplicationMallocFailedHook
-                0x000000001a001d14       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
-                0x000000001a001d14                vApplicationMallocFailedHook
+                0x000000001a001d20       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+                0x000000001a001d20                vApplicationMallocFailedHook
  .text.vApplicationStackOverflowHook
-                0x000000001a001d30       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
-                0x000000001a001d30                vApplicationStackOverflowHook
+                0x000000001a001d3c       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+                0x000000001a001d3c                vApplicationStackOverflowHook
  .text.prvResetNextTaskUnblockTime
-                0x000000001a001d4c       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001d58       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.prvInitialiseNewTask
-                0x000000001a001d78       0x92 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
- *fill*         0x000000001a001e0a        0x2 ff
+                0x000000001a001d84       0x92 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+ *fill*         0x000000001a001e16        0x2 ff
  .text.prvInitialiseTaskLists
-                0x000000001a001e0c       0x68 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001e18       0x68 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.prvAddNewTaskToReadyList
-                0x000000001a001e74       0xac mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001e80       0xac mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.prvDeleteTCB
-                0x000000001a001f20       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001f2c       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.prvCheckTasksWaitingTermination
-                0x000000001a001f58       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001f64       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.prvIdleTask
-                0x000000001a001fa4       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001fb0       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.prvAddCurrentTaskToDelayedList
-                0x000000001a001fcc       0x98 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a001fd8       0x98 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
  .text.xTaskCreateStatic
-                0x000000001a002064       0x72 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a002064                xTaskCreateStatic
+                0x000000001a002070       0x72 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002070                xTaskCreateStatic
  .text.xTaskCreate
-                0x000000001a0020d6       0x66 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0020d6                xTaskCreate
+                0x000000001a0020e2       0x66 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0020e2                xTaskCreate
  .text.vTaskStartScheduler
-                0x000000001a00213c       0x94 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a00213c                vTaskStartScheduler
+                0x000000001a002148       0x94 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002148                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x000000001a0021d0       0x10 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0021d0                vTaskSuspendAll
+                0x000000001a0021dc       0x10 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0021dc                vTaskSuspendAll
  .text.xTaskGetTickCount
-                0x000000001a0021e0        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0021e0                xTaskGetTickCount
+                0x000000001a0021ec        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0021ec                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x000000001a0021ec      0x118 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0021ec                xTaskIncrementTick
+                0x000000001a0021f8      0x118 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0021f8                xTaskIncrementTick
  .text.xTaskResumeAll
-                0x000000001a002304       0xf4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a002304                xTaskResumeAll
+                0x000000001a002310       0xf4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002310                xTaskResumeAll
  .text.vTaskDelayUntil
-                0x000000001a0023f8       0xa4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0023f8                vTaskDelayUntil
+                0x000000001a002404       0xa4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002404                vTaskDelayUntil
  .text.vTaskSwitchContext
-                0x000000001a00249c       0xc8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a00249c                vTaskSwitchContext
+                0x000000001a0024a8       0xc8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0024a8                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x000000001a002564       0x30 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a002564                vTaskPlaceOnEventList
+                0x000000001a002570       0x30 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002570                vTaskPlaceOnEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x000000001a002594       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a002594                vTaskPlaceOnEventListRestricted
+                0x000000001a0025a0       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0025a0                vTaskPlaceOnEventListRestricted
  .text.xTaskRemoveFromEventList
-                0x000000001a0025cc       0x8c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0025cc                xTaskRemoveFromEventList
+                0x000000001a0025d8       0x8c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0025d8                xTaskRemoveFromEventList
  .text.vTaskInternalSetTimeOutState
-                0x000000001a002658       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a002658                vTaskInternalSetTimeOutState
+                0x000000001a002664       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002664                vTaskInternalSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x000000001a002670       0x80 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a002670                xTaskCheckForTimeOut
+                0x000000001a00267c       0x80 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a00267c                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x000000001a0026f0        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0026f0                vTaskMissedYield
+                0x000000001a0026fc        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a0026fc                vTaskMissedYield
  .text.xTaskGetSchedulerState
-                0x000000001a0026fc       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a0026fc                xTaskGetSchedulerState
+                0x000000001a002708       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002708                xTaskGetSchedulerState
  .text.xTaskPriorityDisinherit
-                0x000000001a00271c       0xb0 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
-                0x000000001a00271c                xTaskPriorityDisinherit
+                0x000000001a002728       0xb0 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+                0x000000001a002728                xTaskPriorityDisinherit
  .text.prvGetNextExpireTime
-                0x000000001a0027cc       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a0027d8       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvInsertTimerInActiveList
-                0x000000001a0027ec       0x48 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a0027f8       0x48 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvCheckForValidListAndQueue
-                0x000000001a002834       0x70 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a002840       0x70 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvInitialiseNewTimer
-                0x000000001a0028a4       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a0028b0       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.xTimerCreateTimerTask
-                0x000000001a0028e4       0x64 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
-                0x000000001a0028e4                xTimerCreateTimerTask
+                0x000000001a0028f0       0x64 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a0028f0                xTimerCreateTimerTask
  .text.xTimerCreate
-                0x000000001a002948       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
-                0x000000001a002948                xTimerCreate
+                0x000000001a002954       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a002954                xTimerCreate
  .text.xTimerGenericCommand
-                0x000000001a002980       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
-                0x000000001a002980                xTimerGenericCommand
+                0x000000001a00298c       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a00298c                xTimerGenericCommand
  .text.prvSwitchTimerLists
-                0x000000001a0029ec       0x78 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a0029f8       0x78 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvSampleTimeNow
-                0x000000001a002a64       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a002a70       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvProcessExpiredTimer
-                0x000000001a002a90       0x60 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a002a9c       0x60 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvProcessTimerOrBlockTask
-                0x000000001a002af0       0x74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a002afc       0x74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvProcessReceivedCommands
-                0x000000001a002b64       0xfc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a002b70       0xfc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .text.prvTimerTask
-                0x000000001a002c60       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
- *fill*         0x000000001a002c76        0x2 ff
+                0x000000001a002c6c       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+ *fill*         0x000000001a002c82        0x2 ff
  .text.prvTaskExitError
-                0x000000001a002c78       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002c84       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
  .text.prvPortStartFirstTask
-                0x000000001a002cb8       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002cc4       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
  .text.vPortEnableVFP
-                0x000000001a002ce0       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002cec       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
  .text.pxPortInitialiseStack
-                0x000000001a002cf4       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002cf4                pxPortInitialiseStack
+                0x000000001a002d00       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002d00                pxPortInitialiseStack
+ *fill*         0x000000001a002d2c        0x4 ff
  .text.SVC_Handler
-                0x000000001a002d20       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002d20                SVC_Handler
+                0x000000001a002d30       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002d30                SVC_Handler
  .text.vPortEnterCritical
-                0x000000001a002d44       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002d44                vPortEnterCritical
+                0x000000001a002d54       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002d54                vPortEnterCritical
  .text.vPortExitCritical
-                0x000000001a002d88       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002d88                vPortExitCritical
- *fill*         0x000000001a002db4        0xc ff
+                0x000000001a002d98       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002d98                vPortExitCritical
+ *fill*         0x000000001a002dc4        0xc ff
  .text.PendSV_Handler
-                0x000000001a002dc0       0x64 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002dc0                PendSV_Handler
+                0x000000001a002dd0       0x64 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002dd0                PendSV_Handler
  .text.SysTick_Handler
-                0x000000001a002e24       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002e24                SysTick_Handler
+                0x000000001a002e34       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002e34                SysTick_Handler
  .text.vPortSetupTimerInterrupt
-                0x000000001a002e50       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002e50                vPortSetupTimerInterrupt
+                0x000000001a002e60       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002e60                vPortSetupTimerInterrupt
  .text.xPortStartScheduler
-                0x000000001a002e88      0x110 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002e88                xPortStartScheduler
+                0x000000001a002e98      0x110 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002e98                xPortStartScheduler
  .text.vPortValidateInterruptPriority
-                0x000000001a002f98       0x5c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
-                0x000000001a002f98                vPortValidateInterruptPriority
+                0x000000001a002fa8       0x5c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+                0x000000001a002fa8                vPortValidateInterruptPriority
  .text.DAC_IRQHandler
-                0x000000001a002ff4       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM/freertos_cm_support.o
-                0x000000001a002ff4                DAC_IRQHandler
+                0x000000001a003004       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM/freertos_cm_support.o
+                0x000000001a003004                DAC_IRQHandler
  .text.Board_LED_Init
-                0x000000001a003014       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003024       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_TEC_Init
-                0x000000001a003058       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003068       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_GPIO_Init
-                0x000000001a003098       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a0030a8       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_ADC_Init
-                0x000000001a0030d8       0x30 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a0030e8       0x30 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_SPI_Init
-                0x000000001a003108       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003118       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_I2C_Init
-                0x000000001a003140       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003150       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_Debug_Init
-                0x000000001a003164       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a003164                Board_Debug_Init
+                0x000000001a003174       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003174                Board_Debug_Init
  .text.Board_UARTPutChar
-                0x000000001a003188       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a003188                Board_UARTPutChar
+                0x000000001a003198       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003198                Board_UARTPutChar
  .text.Board_UARTGetChar
-                0x000000001a00319c       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a00319c                Board_UARTGetChar
+                0x000000001a0031ac       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a0031ac                Board_UARTGetChar
  .text.Board_Init
-                0x000000001a0031b8       0x30 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a0031b8                Board_Init
+                0x000000001a0031c8       0x30 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a0031c8                Board_Init
  .text.__stdio_putchar
-                0x000000001a0031e8        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a0031e8                __stdio_putchar
+                0x000000001a0031f8        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a0031f8                __stdio_putchar
  .text.__stdio_getchar
-                0x000000001a0031f2        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a0031f2                __stdio_getchar
+                0x000000001a003202        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a003202                __stdio_getchar
  .text.__stdio_init
-                0x000000001a0031fa        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a0031fa                __stdio_init
- *fill*         0x000000001a003202        0x2 ff
+                0x000000001a00320a        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a00320a                __stdio_init
+ *fill*         0x000000001a003212        0x2 ff
  .text.Board_SetupMuxing
-                0x000000001a003204       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
-                0x000000001a003204                Board_SetupMuxing
+                0x000000001a003214       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a003214                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x000000001a00323c       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
-                0x000000001a00323c                Board_SetupClocking
+                0x000000001a00324c       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a00324c                Board_SetupClocking
  .text.Board_SystemInit
-                0x000000001a0032a8        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
-                0x000000001a0032a8                Board_SystemInit
+                0x000000001a0032b8        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a0032b8                Board_SystemInit
  .text.Chip_I2C_EventHandler
-                0x000000001a0032b4       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
-                0x000000001a0032b4                Chip_I2C_EventHandler
+                0x000000001a0032c4       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+                0x000000001a0032c4                Chip_I2C_EventHandler
  .text.Chip_I2C_Init
-                0x000000001a0032d4       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
-                0x000000001a0032d4                Chip_I2C_Init
+                0x000000001a0032e4       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+                0x000000001a0032e4                Chip_I2C_Init
  .text.Chip_I2C_SetClockRate
-                0x000000001a0032f8       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
-                0x000000001a0032f8                Chip_I2C_SetClockRate
+                0x000000001a003308       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+                0x000000001a003308                Chip_I2C_SetClockRate
  .text.Chip_UART_GetIndex
-                0x000000001a003330       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a003340       0x2c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
  .text.Chip_UART_Init
-                0x000000001a00335c       0x54 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
-                0x000000001a00335c                Chip_UART_Init
+                0x000000001a00336c       0x54 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a00336c                Chip_UART_Init
  .text.Chip_UART_SetBaud
-                0x000000001a0033b0       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
-                0x000000001a0033b0                Chip_UART_SetBaud
+                0x000000001a0033c0       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a0033c0                Chip_UART_SetBaud
  .text.Chip_UART_SetBaudFDR
-                0x000000001a0033f0       0xe8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
-                0x000000001a0033f0                Chip_UART_SetBaudFDR
+                0x000000001a003400       0xe8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a003400                Chip_UART_SetBaudFDR
  .text.Chip_ADC_GetClockIndex
-                0x000000001a0034d8       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a0034e8       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
  .text.getClkDiv
-                0x000000001a0034ec       0x32 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a0034fc       0x32 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
  .text.setStartMode
-                0x000000001a00351e        0xe mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a00351e                setStartMode
+                0x000000001a00352e        0xe mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00352e                setStartMode
  .text.readAdcVal
-                0x000000001a00352c       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a00352c                readAdcVal
+                0x000000001a00353c       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00353c                readAdcVal
  .text.Chip_ADC_Init
-                0x000000001a003544       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a003544                Chip_ADC_Init
+                0x000000001a003554       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a003554                Chip_ADC_Init
  .text.Chip_ADC_DeInit
-                0x000000001a003584       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a003584                Chip_ADC_DeInit
+                0x000000001a003594       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a003594                Chip_ADC_DeInit
  .text.Chip_ADC_ReadValue
-                0x000000001a00359a        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a00359a                Chip_ADC_ReadValue
+                0x000000001a0035aa        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a0035aa                Chip_ADC_ReadValue
  .text.Chip_ADC_ReadStatus
-                0x000000001a0035a2       0x36 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a0035a2                Chip_ADC_ReadStatus
+                0x000000001a0035b2       0x36 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a0035b2                Chip_ADC_ReadStatus
  .text.Chip_ADC_Int_SetChannelCmd
-                0x000000001a0035d8       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a0035d8                Chip_ADC_Int_SetChannelCmd
+                0x000000001a0035e8       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a0035e8                Chip_ADC_Int_SetChannelCmd
  .text.Chip_ADC_SetStartMode
-                0x000000001a0035f8       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a0035f8                Chip_ADC_SetStartMode
+                0x000000001a003608       0x20 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a003608                Chip_ADC_SetStartMode
  .text.Chip_ADC_SetSampleRate
-                0x000000001a003618       0x32 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a003618                Chip_ADC_SetSampleRate
+                0x000000001a003628       0x32 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a003628                Chip_ADC_SetSampleRate
  .text.Chip_ADC_SetResolution
-                0x000000001a00364a        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a00364a                Chip_ADC_SetResolution
+                0x000000001a00365a        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00365a                Chip_ADC_SetResolution
  .text.Chip_ADC_EnableChannel
-                0x000000001a003656       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a003656                Chip_ADC_EnableChannel
+                0x000000001a003666       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a003666                Chip_ADC_EnableChannel
  .text.Chip_ADC_SetBurstCmd
-                0x000000001a00367e       0x22 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a00367e                Chip_ADC_SetBurstCmd
+                0x000000001a00368e       0x22 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00368e                Chip_ADC_SetBurstCmd
  .text.pll_calc_divs
-                0x000000001a0036a0       0xa4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0036b0       0xa4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .text.pll_get_frac
-                0x000000001a003744      0x10c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003754      0x10c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .text.Chip_Clock_FindBaseClock
-                0x000000001a003850       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003860       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .text.Chip_Clock_EnableCrystal
-                0x000000001a00389c       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a00389c                Chip_Clock_EnableCrystal
+                0x000000001a0038ac       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0038ac                Chip_Clock_EnableCrystal
  .text.Chip_Clock_GetDividerSource
-                0x000000001a0038e8       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0038e8                Chip_Clock_GetDividerSource
+                0x000000001a0038f8       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0038f8                Chip_Clock_GetDividerSource
  .text.Chip_Clock_GetDividerDivisor
-                0x000000001a003904       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003904                Chip_Clock_GetDividerDivisor
+                0x000000001a003914       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003914                Chip_Clock_GetDividerDivisor
  .text.Chip_Clock_GetClockInputHz
-                0x000000001a003920       0xb8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003920                Chip_Clock_GetClockInputHz
+                0x000000001a003930       0xb8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003930                Chip_Clock_GetClockInputHz
  .text.Chip_Clock_CalcMainPLLValue
-                0x000000001a0039d8       0x80 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0039d8                Chip_Clock_CalcMainPLLValue
+                0x000000001a0039e8       0x80 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0039e8                Chip_Clock_CalcMainPLLValue
  .text.Chip_Clock_GetMainPLLHz
-                0x000000001a003a58       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003a58                Chip_Clock_GetMainPLLHz
+                0x000000001a003a68       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003a68                Chip_Clock_GetMainPLLHz
  .text.Chip_Clock_GetDivRate
-                0x000000001a003ac4       0x22 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- *fill*         0x000000001a003ae6        0x2 ff
+                0x000000001a003ad4       0x22 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ *fill*         0x000000001a003af6        0x2 ff
  .text.Chip_Clock_SetBaseClock
-                0x000000001a003ae8       0x58 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003ae8                Chip_Clock_SetBaseClock
+                0x000000001a003af8       0x58 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003af8                Chip_Clock_SetBaseClock
  .text.Chip_Clock_GetBaseClock
-                0x000000001a003b40       0x26 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003b40                Chip_Clock_GetBaseClock
+                0x000000001a003b50       0x26 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003b50                Chip_Clock_GetBaseClock
  .text.Chip_Clock_GetBaseClocktHz
-                0x000000001a003b66        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003b66                Chip_Clock_GetBaseClocktHz
- *fill*         0x000000001a003b72        0x2 ff
+                0x000000001a003b76        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003b76                Chip_Clock_GetBaseClocktHz
+ *fill*         0x000000001a003b82        0x2 ff
  .text.Chip_Clock_EnableOpts
-                0x000000001a003b74       0x3c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003b74                Chip_Clock_EnableOpts
+                0x000000001a003b84       0x3c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003b84                Chip_Clock_EnableOpts
  .text.Chip_Clock_Enable
-                0x000000001a003bb0       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003bb0                Chip_Clock_Enable
+                0x000000001a003bc0       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003bc0                Chip_Clock_Enable
  .text.Chip_Clock_Disable
-                0x000000001a003be4       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003be4                Chip_Clock_Disable
+                0x000000001a003bf4       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003bf4                Chip_Clock_Disable
  .text.Chip_Clock_GetRate
-                0x000000001a003c18       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a003c18                Chip_Clock_GetRate
+                0x000000001a003c28       0x4c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a003c28                Chip_Clock_GetRate
  .text.SystemCoreClockUpdate
-                0x000000001a003c64       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
-                0x000000001a003c64                SystemCoreClockUpdate
+                0x000000001a003c74       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+                0x000000001a003c74                SystemCoreClockUpdate
  .text.Chip_SetupCoreClock
-                0x000000001a003c78      0x154 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
-                0x000000001a003c78                Chip_SetupCoreClock
+                0x000000001a003c88      0x154 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+                0x000000001a003c88                Chip_SetupCoreClock
  .text.Chip_GPIO_Init
-                0x000000001a003dcc        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
-                0x000000001a003dcc                Chip_GPIO_Init
- *fill*         0x000000001a003dce        0x2 ff
+                0x000000001a003ddc        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+                0x000000001a003ddc                Chip_GPIO_Init
+ *fill*         0x000000001a003dde        0x2 ff
  .text.Chip_SSP_GetClockIndex
-                0x000000001a003dd0       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a003de0       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
  .text.Chip_SSP_GetPeriphClockIndex
-                0x000000001a003de4       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a003df4       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
  .text.Chip_SSP_SetClockRate
-                0x000000001a003dfc       0x12 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
-                0x000000001a003dfc                Chip_SSP_SetClockRate
+                0x000000001a003e0c       0x12 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a003e0c                Chip_SSP_SetClockRate
  .text.Chip_SSP_SetBitRate
-                0x000000001a003e0e       0x3e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
-                0x000000001a003e0e                Chip_SSP_SetBitRate
+                0x000000001a003e1e       0x3e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a003e1e                Chip_SSP_SetBitRate
  .text.Chip_SSP_Init
-                0x000000001a003e4c       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
-                0x000000001a003e4c                Chip_SSP_Init
+                0x000000001a003e5c       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a003e5c                Chip_SSP_Init
  .text.SystemInit
-                0x000000001a003e84       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/sysinit.o
-                0x000000001a003e84                SystemInit
+                0x000000001a003e94       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/sysinit.o
+                0x000000001a003e94                SystemInit
  .text.cyclesCounterInit
-                0x000000001a003ebc       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/core/src/sapi_cyclesCounter.o
-                0x000000001a003ebc                cyclesCounterInit
+                0x000000001a003ecc       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/core/src/sapi_cyclesCounter.o
+                0x000000001a003ecc                cyclesCounterInit
  .text.uartProcessIRQ
-                0x000000001a003ed8       0xc8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a003ee8       0xc8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
  .text.uartInterrupt
-                0x000000001a003fa0       0x90 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a003fa0                uartInterrupt
+                0x000000001a003fb0       0x90 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a003fb0                uartInterrupt
  .text.uartCallbackSet
-                0x000000001a004030       0xbc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a004030                uartCallbackSet
+                0x000000001a004040       0xbc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a004040                uartCallbackSet
  .text.uartTxReady
-                0x000000001a0040ec       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a0040ec                uartTxReady
+                0x000000001a0040fc       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a0040fc                uartTxReady
  .text.uartRxRead
-                0x000000001a004104       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a004104                uartRxRead
+                0x000000001a004114       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a004114                uartRxRead
  .text.uartTxWrite
-                0x000000001a004118       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a004118                uartTxWrite
+                0x000000001a004128       0x14 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a004128                uartTxWrite
  .text.uartInit
-                0x000000001a00412c       0x7c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a00412c                uartInit
+                0x000000001a00413c       0x7c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a00413c                uartInit
  .text.uartWriteByte
-                0x000000001a0041a8       0x1a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a0041a8                uartWriteByte
+                0x000000001a0041b8       0x1a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a0041b8                uartWriteByte
  .text.uartWriteString
-                0x000000001a0041c2       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a0041c2                uartWriteString
+                0x000000001a0041d2       0x18 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a0041d2                uartWriteString
  .text.UART2_IRQHandler
-                0x000000001a0041da        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a0041da                UART2_IRQHandler
+                0x000000001a0041ea        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a0041ea                UART2_IRQHandler
  .text.UART3_IRQHandler
-                0x000000001a0041e4        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
-                0x000000001a0041e4                UART3_IRQHandler
+                0x000000001a0041f4        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+                0x000000001a0041f4                UART3_IRQHandler
  .text.errorOcurred
-                0x000000001a0041ee        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+                0x000000001a0041fe        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
  .text.doNothing
-                0x000000001a0041f0        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
- *fill*         0x000000001a0041f2        0x2 ff
+                0x000000001a004200        0x2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+ *fill*         0x000000001a004202        0x2 ff
  .text.TIMER0_IRQHandler
-                0x000000001a0041f4       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
-                0x000000001a0041f4                TIMER0_IRQHandler
+                0x000000001a004204       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+                0x000000001a004204                TIMER0_IRQHandler
  .text.TIMER1_IRQHandler
-                0x000000001a004234       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
-                0x000000001a004234                TIMER1_IRQHandler
+                0x000000001a004244       0x40 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+                0x000000001a004244                TIMER1_IRQHandler
  .text.TIMER2_IRQHandler
-                0x000000001a004274       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
-                0x000000001a004274                TIMER2_IRQHandler
+                0x000000001a004284       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+                0x000000001a004284                TIMER2_IRQHandler
  .text.TIMER3_IRQHandler
-                0x000000001a0042b8       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
-                0x000000001a0042b8                TIMER3_IRQHandler
- .text.adcInit  0x000000001a0042fc       0xb8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
-                0x000000001a0042fc                adcInit
- .text.adcRead  0x000000001a0043b4       0x58 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
-                0x000000001a0043b4                adcRead
+                0x000000001a0042c8       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+                0x000000001a0042c8                TIMER3_IRQHandler
+ .text.adcInit  0x000000001a00430c       0xb8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
+                0x000000001a00430c                adcInit
+ .text.adcRead  0x000000001a0043c4       0x58 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
+                0x000000001a0043c4                adcRead
  .text.gpioObtainPinInit
-                0x000000001a00440c       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+                0x000000001a00441c       0x34 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
  .text.gpioInit
-                0x000000001a004440      0x1ac mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
-                0x000000001a004440                gpioInit
+                0x000000001a004450      0x1ac mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+                0x000000001a004450                gpioInit
  .text.gpioWrite
-                0x000000001a0045ec       0x6a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
-                0x000000001a0045ec                gpioWrite
+                0x000000001a0045fc       0x6a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+                0x000000001a0045fc                gpioWrite
  .text.gpioRead
-                0x000000001a004656       0x68 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
-                0x000000001a004656                gpioRead
+                0x000000001a004666       0x68 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+                0x000000001a004666                gpioRead
  .text.gpioToggle
-                0x000000001a0046be       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
-                0x000000001a0046be                gpioToggle
+                0x000000001a0046ce       0x16 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+                0x000000001a0046ce                gpioToggle
  .text.USB0_IRQHandler
-                0x000000001a0046d4       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/usb/device/src/sapi_usb_device.o
-                0x000000001a0046d4                USB0_IRQHandler
+                0x000000001a0046e4       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/usb/device/src/sapi_usb_device.o
+                0x000000001a0046e4                USB0_IRQHandler
  .text.boardInit
-                0x000000001a0046f0       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
-                0x000000001a0046f0                boardInit
+                0x000000001a004700       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
+                0x000000001a004700                boardInit
  .text.clearInterrupt
-                0x000000001a00475c       0x10 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+                0x000000001a00476c       0x10 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
  .text.serveInterrupt
-                0x000000001a00476c       0x5c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+                0x000000001a00477c       0x5c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
  .text.GPIO0_IRQHandler
-                0x000000001a0047c8        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
-                0x000000001a0047c8                GPIO0_IRQHandler
+                0x000000001a0047d8        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+                0x000000001a0047d8                GPIO0_IRQHandler
  .text.GPIO1_IRQHandler
-                0x000000001a0047d2        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
-                0x000000001a0047d2                GPIO1_IRQHandler
+                0x000000001a0047e2        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+                0x000000001a0047e2                GPIO1_IRQHandler
  .text.GPIO2_IRQHandler
-                0x000000001a0047dc        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
-                0x000000001a0047dc                GPIO2_IRQHandler
- *fill*         0x000000001a0047e6        0x2 ff
- .text          0x000000001a0047e8      0x378 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_addsubdf3.o)
-                0x000000001a0047e8                __aeabi_drsub
-                0x000000001a0047f0                __aeabi_dsub
-                0x000000001a0047f0                __subdf3
-                0x000000001a0047f4                __adddf3
-                0x000000001a0047f4                __aeabi_dadd
-                0x000000001a004a6c                __aeabi_ui2d
-                0x000000001a004a6c                __floatunsidf
-                0x000000001a004a8c                __floatsidf
-                0x000000001a004a8c                __aeabi_i2d
-                0x000000001a004ab0                __extendsfdf2
-                0x000000001a004ab0                __aeabi_f2d
-                0x000000001a004af4                __aeabi_ul2d
-                0x000000001a004af4                __floatundidf
-                0x000000001a004b04                __floatdidf
-                0x000000001a004b04                __aeabi_l2d
- .text          0x000000001a004b60      0x424 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_muldivdf3.o)
-                0x000000001a004b60                __aeabi_dmul
-                0x000000001a004b60                __muldf3
-                0x000000001a004db4                __aeabi_ddiv
-                0x000000001a004db4                __divdf3
- .text          0x000000001a004f84      0x110 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_cmpdf2.o)
-                0x000000001a004f84                __gtdf2
-                0x000000001a004f84                __gedf2
-                0x000000001a004f8c                __ltdf2
-                0x000000001a004f8c                __ledf2
-                0x000000001a004f94                __cmpdf2
-                0x000000001a004f94                __eqdf2
-                0x000000001a004f94                __nedf2
-                0x000000001a005010                __aeabi_cdrcmple
-                0x000000001a005020                __aeabi_cdcmple
-                0x000000001a005020                __aeabi_cdcmpeq
-                0x000000001a005030                __aeabi_dcmpeq
-                0x000000001a005044                __aeabi_dcmplt
-                0x000000001a005058                __aeabi_dcmple
-                0x000000001a00506c                __aeabi_dcmpge
-                0x000000001a005080                __aeabi_dcmpgt
- .text          0x000000001a005094       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_truncdfsf2.o)
-                0x000000001a005094                __aeabi_d2f
-                0x000000001a005094                __truncdfsf2
- .text          0x000000001a005134       0x30 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
-                0x000000001a005134                __aeabi_uldivmod
- .text          0x000000001a005164      0x2cc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
-                0x000000001a005164                __udivmoddi4
- .text          0x000000001a005430        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
-                0x000000001a005430                __aeabi_ldiv0
-                0x000000001a005430                __aeabi_idiv0
+                0x000000001a0047ec        0xa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+                0x000000001a0047ec                GPIO2_IRQHandler
+ *fill*         0x000000001a0047f6        0x2 ff
+ .text          0x000000001a0047f8      0x378 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_addsubdf3.o)
+                0x000000001a0047f8                __aeabi_drsub
+                0x000000001a004800                __aeabi_dsub
+                0x000000001a004800                __subdf3
+                0x000000001a004804                __adddf3
+                0x000000001a004804                __aeabi_dadd
+                0x000000001a004a7c                __aeabi_ui2d
+                0x000000001a004a7c                __floatunsidf
+                0x000000001a004a9c                __floatsidf
+                0x000000001a004a9c                __aeabi_i2d
+                0x000000001a004ac0                __extendsfdf2
+                0x000000001a004ac0                __aeabi_f2d
+                0x000000001a004b04                __aeabi_ul2d
+                0x000000001a004b04                __floatundidf
+                0x000000001a004b14                __floatdidf
+                0x000000001a004b14                __aeabi_l2d
+ .text          0x000000001a004b70      0x424 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_muldivdf3.o)
+                0x000000001a004b70                __aeabi_dmul
+                0x000000001a004b70                __muldf3
+                0x000000001a004dc4                __aeabi_ddiv
+                0x000000001a004dc4                __divdf3
+ .text          0x000000001a004f94      0x110 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_cmpdf2.o)
+                0x000000001a004f94                __gtdf2
+                0x000000001a004f94                __gedf2
+                0x000000001a004f9c                __ltdf2
+                0x000000001a004f9c                __ledf2
+                0x000000001a004fa4                __cmpdf2
+                0x000000001a004fa4                __eqdf2
+                0x000000001a004fa4                __nedf2
+                0x000000001a005020                __aeabi_cdrcmple
+                0x000000001a005030                __aeabi_cdcmple
+                0x000000001a005030                __aeabi_cdcmpeq
+                0x000000001a005040                __aeabi_dcmpeq
+                0x000000001a005054                __aeabi_dcmplt
+                0x000000001a005068                __aeabi_dcmple
+                0x000000001a00507c                __aeabi_dcmpge
+                0x000000001a005090                __aeabi_dcmpgt
+ .text          0x000000001a0050a4       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_truncdfsf2.o)
+                0x000000001a0050a4                __aeabi_d2f
+                0x000000001a0050a4                __truncdfsf2
+ .text          0x000000001a005144       0x30 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x000000001a005144                __aeabi_uldivmod
+ .text          0x000000001a005174      0x2cc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+                0x000000001a005174                __udivmoddi4
+ .text          0x000000001a005440        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
+                0x000000001a005440                __aeabi_ldiv0
+                0x000000001a005440                __aeabi_idiv0
  .text._fclose_r
-                0x000000001a005434       0xd0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
-                0x000000001a005434                _fclose_r
+                0x000000001a005444       0xd0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
+                0x000000001a005444                _fclose_r
  .text.__sflush_r
-                0x000000001a005504      0x154 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
-                0x000000001a005504                __sflush_r
+                0x000000001a005514      0x154 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+                0x000000001a005514                __sflush_r
  .text._fflush_r
-                0x000000001a005658       0x5c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
-                0x000000001a005658                _fflush_r
- .text.std      0x000000001a0056b4       0x50 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000001a005668       0x5c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+                0x000000001a005668                _fflush_r
+ .text.std      0x000000001a0056c4       0x50 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x000000001a005704        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000001a005704                _cleanup_r
- .text.__sinit  0x000000001a005710       0x58 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000001a005710                __sinit
+                0x000000001a005714        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000001a005714                _cleanup_r
+ .text.__sinit  0x000000001a005720       0x58 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000001a005720                __sinit
  .text.__sfp_lock_acquire
-                0x000000001a005768        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000001a005768                __sfp_lock_acquire
+                0x000000001a005778        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000001a005778                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x000000001a005774        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000001a005774                __sfp_lock_release
+                0x000000001a005784        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000001a005784                __sfp_lock_release
  .text._malloc_trim_r
-                0x000000001a005780       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
-                0x000000001a005780                _malloc_trim_r
- .text._free_r  0x000000001a005820      0x1e8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
-                0x000000001a005820                _free_r
+                0x000000001a005790       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+                0x000000001a005790                _malloc_trim_r
+ .text._free_r  0x000000001a005830      0x1e8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+                0x000000001a005830                _free_r
  .text._fwalk_reent
-                0x000000001a005a08       0x54 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
-                0x000000001a005a08                _fwalk_reent
+                0x000000001a005a18       0x54 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
+                0x000000001a005a18                _fwalk_reent
  .text.__libc_init_array
-                0x000000001a005a5c       0x48 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
-                0x000000001a005a5c                __libc_init_array
+                0x000000001a005a6c       0x48 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+                0x000000001a005a6c                __libc_init_array
  .text.__locale_mb_cur_max
-                0x000000001a005aa4       0x1c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
-                0x000000001a005aa4                __locale_mb_cur_max
+                0x000000001a005ab4       0x1c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000001a005ab4                __locale_mb_cur_max
  .text.__retarget_lock_init_recursive
-                0x000000001a005ac0        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000001a005ac0                __retarget_lock_init_recursive
+                0x000000001a005ad0        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000001a005ad0                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x000000001a005ac4        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000001a005ac4                __retarget_lock_close_recursive
+                0x000000001a005ad4        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000001a005ad4                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x000000001a005ac8        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000001a005ac8                __retarget_lock_acquire_recursive
+                0x000000001a005ad8        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000001a005ad8                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000001a005acc        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000001a005acc                __retarget_lock_release_recursive
+                0x000000001a005adc        0x4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000001a005adc                __retarget_lock_release_recursive
  .text._malloc_r
-                0x000000001a005ad0      0x548 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
-                0x000000001a005ad0                _malloc_r
+                0x000000001a005ae0      0x548 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
+                0x000000001a005ae0                _malloc_r
  .text.__ascii_mbtowc
-                0x000000001a006018       0x2c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
-                0x000000001a006018                __ascii_mbtowc
- .text          0x000000001a006044      0x134 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memcpy.o)
-                0x000000001a006044                memcpy
- .text.memset   0x000000001a006178       0x94 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
-                0x000000001a006178                memset
+                0x000000001a006028       0x2c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
+                0x000000001a006028                __ascii_mbtowc
+ .text          0x000000001a006054      0x134 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memcpy.o)
+                0x000000001a006054                memcpy
+ .text.memset   0x000000001a006188       0x94 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+                0x000000001a006188                memset
  .text.__malloc_lock
-                0x000000001a00620c        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
-                0x000000001a00620c                __malloc_lock
+                0x000000001a00621c        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+                0x000000001a00621c                __malloc_lock
  .text.__malloc_unlock
-                0x000000001a006218        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
-                0x000000001a006218                __malloc_unlock
- .text.printf   0x000000001a006224       0x28 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
-                0x000000001a006224                printf
- .text._puts_r  0x000000001a00624c       0x9c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
-                0x000000001a00624c                _puts_r
- .text.puts     0x000000001a0062e8       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
-                0x000000001a0062e8                puts
- .text.__sread  0x000000001a0062f8       0x24 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000001a0062f8                __sread
+                0x000000001a006228        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+                0x000000001a006228                __malloc_unlock
+ .text.printf   0x000000001a006234       0x28 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
+                0x000000001a006234                printf
+ .text._puts_r  0x000000001a00625c       0x9c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
+                0x000000001a00625c                _puts_r
+ .text.puts     0x000000001a0062f8       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
+                0x000000001a0062f8                puts
+ .text.__sread  0x000000001a006308       0x24 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000001a006308                __sread
  .text.__swrite
-                0x000000001a00631c       0x3c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000001a00631c                __swrite
- .text.__sseek  0x000000001a006358       0x20 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000001a006358                __sseek
+                0x000000001a00632c       0x3c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000001a00632c                __swrite
+ .text.__sseek  0x000000001a006368       0x20 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000001a006368                __sseek
  .text.__sclose
-                0x000000001a006378        0x8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000001a006378                __sclose
- .text          0x000000001a006380       0xdc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strlen.o)
-                0x000000001a006380                strlen
- *fill*         0x000000001a00645c        0x4 ff
+                0x000000001a006388        0x8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000001a006388                __sclose
+ *fill*         0x000000001a006390       0x30 ff
+ .text          0x000000001a0063c0       0xdc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strlen.o)
+                0x000000001a0063c0                strlen
+ *fill*         0x000000001a00649c        0x4 ff
  .text._vfprintf_r
-                0x000000001a006460     0x1a7c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
-                0x000000001a006460                _vfprintf_r
+                0x000000001a0064a0     0x1a7c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000001a0064a0                _vfprintf_r
  .text.__sbprintf
-                0x000000001a007edc       0x84 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000001a007f1c       0x84 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .text.__ascii_wctomb
-                0x000000001a007f60       0x1c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
-                0x000000001a007f60                __ascii_wctomb
+                0x000000001a007fa0       0x1c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
+                0x000000001a007fa0                __ascii_wctomb
  .text.__swsetup_r
-                0x000000001a007f7c       0xcc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
-                0x000000001a007f7c                __swsetup_r
- .text.quorem   0x000000001a008048      0x124 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
- *fill*         0x000000001a00816c        0x4 ff
- .text._dtoa_r  0x000000001a008170      0xe20 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
-                0x000000001a008170                _dtoa_r
+                0x000000001a007fbc       0xcc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
+                0x000000001a007fbc                __swsetup_r
+ .text.quorem   0x000000001a008088      0x124 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+ *fill*         0x000000001a0081ac        0x4 ff
+ .text._dtoa_r  0x000000001a0081b0      0xe20 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+                0x000000001a0081b0                _dtoa_r
  .text.__sfvwrite_r
-                0x000000001a008f90      0x2fc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
-                0x000000001a008f90                __sfvwrite_r
+                0x000000001a008fd0      0x2fc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
+                0x000000001a008fd0                __sfvwrite_r
  .text._localeconv_r
-                0x000000001a00928c       0x1c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
-                0x000000001a00928c                _localeconv_r
+                0x000000001a0092cc       0x1c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
+                0x000000001a0092cc                _localeconv_r
  .text.__swhatbuf_r
-                0x000000001a0092a8       0x5c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
-                0x000000001a0092a8                __swhatbuf_r
+                0x000000001a0092e8       0x5c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+                0x000000001a0092e8                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000001a009304       0x94 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
-                0x000000001a009304                __smakebuf_r
- *fill*         0x000000001a009398        0x8 ff
- .text          0x000000001a0093a0       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memchr.o)
-                0x000000001a0093a0                memchr
- .text.memmove  0x000000001a009440       0xc8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
-                0x000000001a009440                memmove
- .text._Balloc  0x000000001a009508       0x4c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009508                _Balloc
- .text._Bfree   0x000000001a009554       0x14 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009554                _Bfree
+                0x000000001a009344       0x94 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+                0x000000001a009344                __smakebuf_r
+ *fill*         0x000000001a0093d8        0x8 ff
+ .text          0x000000001a0093e0       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memchr.o)
+                0x000000001a0093e0                memchr
+ .text.memmove  0x000000001a009480       0xc8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
+                0x000000001a009480                memmove
+ .text._Balloc  0x000000001a009548       0x4c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009548                _Balloc
+ .text._Bfree   0x000000001a009594       0x14 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009594                _Bfree
  .text.__multadd
-                0x000000001a009568       0x80 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009568                __multadd
+                0x000000001a0095a8       0x80 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a0095a8                __multadd
  .text.__hi0bits
-                0x000000001a0095e8       0x40 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a0095e8                __hi0bits
+                0x000000001a009628       0x40 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009628                __hi0bits
  .text.__lo0bits
-                0x000000001a009628       0x60 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009628                __lo0bits
- .text.__i2b    0x000000001a009688       0x14 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009688                __i2b
+                0x000000001a009668       0x60 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009668                __lo0bits
+ .text.__i2b    0x000000001a0096c8       0x14 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a0096c8                __i2b
  .text.__multiply
-                0x000000001a00969c      0x14c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a00969c                __multiply
+                0x000000001a0096dc      0x14c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a0096dc                __multiply
  .text.__pow5mult
-                0x000000001a0097e8       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a0097e8                __pow5mult
+                0x000000001a009828       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009828                __pow5mult
  .text.__lshift
-                0x000000001a009888       0xac /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009888                __lshift
- .text.__mcmp   0x000000001a009934       0x38 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009934                __mcmp
- .text.__mdiff  0x000000001a00996c       0xec /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a00996c                __mdiff
- .text.__d2b    0x000000001a009a58       0xc4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a009a58                __d2b
+                0x000000001a0098c8       0xac /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a0098c8                __lshift
+ .text.__mcmp   0x000000001a009974       0x38 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009974                __mcmp
+ .text.__mdiff  0x000000001a0099ac       0xec /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a0099ac                __mdiff
+ .text.__d2b    0x000000001a009a98       0xc4 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a009a98                __d2b
  .text._realloc_r
-                0x000000001a009b1c      0x35c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
-                0x000000001a009b1c                _realloc_r
- .text.frexp    0x000000001a009e78       0x68 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-s_frexp.o)
-                0x000000001a009e78                frexp
- .text.strncpy  0x000000001a009ee0       0x64 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strncpy.o)
-                0x000000001a009ee0                strncpy
+                0x000000001a009b5c      0x35c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
+                0x000000001a009b5c                _realloc_r
+ .text.frexp    0x000000001a009eb8       0x68 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-s_frexp.o)
+                0x000000001a009eb8                frexp
+ .text.strncpy  0x000000001a009f20       0x64 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strncpy.o)
+                0x000000001a009f20                strncpy
  .text.__sprint_r.part.0
-                0x000000001a009f44       0x78 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+                0x000000001a009f84       0x78 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x000000001a009fbc       0x14 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
-                0x000000001a009fbc                __sprint_r
+                0x000000001a009ffc       0x14 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+                0x000000001a009ffc                __sprint_r
  .text._calloc_r
-                0x000000001a009fd0       0x68 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
-                0x000000001a009fd0                _calloc_r
+                0x000000001a00a010       0x68 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
+                0x000000001a00a010                _calloc_r
  .text.__fputwc
-                0x000000001a00a038       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
-                0x000000001a00a038                __fputwc
+                0x000000001a00a078       0xa0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+                0x000000001a00a078                __fputwc
  .text._fputwc_r
-                0x000000001a00a0d8       0x64 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
-                0x000000001a00a0d8                _fputwc_r
+                0x000000001a00a118       0x64 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+                0x000000001a00a118                _fputwc_r
  .text.__swbuf_r
-                0x000000001a00a13c       0xb0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
-                0x000000001a00a13c                __swbuf_r
+                0x000000001a00a17c       0xb0 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
+                0x000000001a00a17c                __swbuf_r
  .text._wcrtomb_r
-                0x000000001a00a1ec       0x50 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
-                0x000000001a00a1ec                _wcrtomb_r
- .text          0x000000001a00a23c       0x2c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_unorddf2.o)
-                0x000000001a00a23c                __aeabi_dcmpun
-                0x000000001a00a23c                __unorddf2
- .text          0x000000001a00a268       0x50 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_fixdfsi.o)
-                0x000000001a00a268                __fixdfsi
-                0x000000001a00a268                __aeabi_d2iz
+                0x000000001a00a22c       0x50 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
+                0x000000001a00a22c                _wcrtomb_r
+ .text          0x000000001a00a27c       0x2c /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_unorddf2.o)
+                0x000000001a00a27c                __aeabi_dcmpun
+                0x000000001a00a27c                __unorddf2
+ .text          0x000000001a00a2a8       0x50 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_fixdfsi.o)
+                0x000000001a00a2a8                __fixdfsi
+                0x000000001a00a2a8                __aeabi_d2iz
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.serialPortReceiveData.str1.4
-                0x000000001a00a2b8        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/serialport.o
+                0x000000001a00a2f8        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/serialport.o
                                           0x2 (size before relaxing)
  .rodata.commandProcessingTask.str1.4
-                0x000000001a00a2b8       0x4e mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/commandprocessing.o
- *fill*         0x000000001a00a306        0x2 ff
+                0x000000001a00a2f8       0x4e mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/commandprocessing.o
+ *fill*         0x000000001a00a346        0x2 ff
  .rodata.main.str1.4
-                0x000000001a00a308      0x19d mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/main.o
- *fill*         0x000000001a00a4a5        0x3 ff
+                0x000000001a00a348      0x19d mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/main.o
+ *fill*         0x000000001a00a4e5        0x3 ff
  .rodata.stepperMotorEnableTask.str1.4
-                0x000000001a00a4a8       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
+                0x000000001a00a4e8       0x28 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
  .rodata.stepperMotorMicroStepsTask.str1.4
-                0x000000001a00a4d0       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
+                0x000000001a00a510       0x38 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
  .rodata.stepperMotorSetDirectionTask.str1.4
-                0x000000001a00a508       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
+                0x000000001a00a548       0x24 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
  .rodata.stepperMotorSetPulseTask.str1.4
-                0x000000001a00a52c       0x3b mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
+                0x000000001a00a56c       0x3b mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
                                          0x4f (size before relaxing)
- *fill*         0x000000001a00a567        0x1 ff
+ *fill*         0x000000001a00a5a7        0x1 ff
  .rodata.stepperMotorTimerInit.str1.4
-                0x000000001a00a568       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
+                0x000000001a00a5a8       0x1c mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
  .rodata.adcScanChannelTask.str1.4
-                0x000000001a00a584       0x3c mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
+                0x000000001a00a5c4       0x54 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
  .rodata.vApplicationMallocFailedHook.str1.4
-                0x000000001a00a5c0       0x41 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
- *fill*         0x000000001a00a601        0x3 ff
+                0x000000001a00a618       0x41 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+ *fill*         0x000000001a00a659        0x3 ff
  .rodata.vApplicationStackOverflowHook.str1.4
-                0x000000001a00a604       0x2d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
- *fill*         0x000000001a00a631        0x3 ff
+                0x000000001a00a65c       0x2d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+ *fill*         0x000000001a00a689        0x3 ff
  .rodata.vAssertCalled.str1.4
-                0x000000001a00a634       0x3f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
- *fill*         0x000000001a00a673        0x1 ff
+                0x000000001a00a68c       0x3f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+ *fill*         0x000000001a00a6cb        0x1 ff
  .rodata.vTaskStartScheduler.str1.4
-                0x000000001a00a674        0x5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
- *fill*         0x000000001a00a679        0x3 ff
+                0x000000001a00a6cc        0x5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+ *fill*         0x000000001a00a6d1        0x3 ff
  .rodata.prvCheckForValidListAndQueue.str1.4
-                0x000000001a00a67c        0x5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
- *fill*         0x000000001a00a681        0x3 ff
+                0x000000001a00a6d4        0x5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+ *fill*         0x000000001a00a6d9        0x3 ff
  .rodata.xTimerCreateTimerTask.str1.4
-                0x000000001a00a684        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+                0x000000001a00a6dc        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
  .rodata.ExtRateIn
-                0x000000001a00a68c        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a00a68c                ExtRateIn
+                0x000000001a00a6e4        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a00a6e4                ExtRateIn
  .rodata.GpioButtons
-                0x000000001a00a690        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a00a6e8        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .rodata.GpioLeds
-                0x000000001a00a698        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a00a6f0        0xc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .rodata.GpioPorts
-                0x000000001a00a6a4       0x12 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
- *fill*         0x000000001a00a6b6        0x2 ff
+                0x000000001a00a6fc       0x12 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+ *fill*         0x000000001a00a70e        0x2 ff
  .rodata.OscRateIn
-                0x000000001a00a6b8        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a00a6b8                OscRateIn
+                0x000000001a00a710        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a00a710                OscRateIn
  .rodata.InitClkStates
-                0x000000001a00a6bc        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a00a714        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
  .rodata.pinmuxing
-                0x000000001a00a6c0       0x74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a00a718       0x74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
  .rodata.UART_BClock
-                0x000000001a00a734        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a00a78c        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
  .rodata.UART_PClock
-                0x000000001a00a73c        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
- .rodata        0x000000001a00a744        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a00a794        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+ .rodata        0x000000001a00a79c        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .rodata.Chip_Clock_SetDivider.str1.4
-                0x000000001a00a748        0x6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- *fill*         0x000000001a00a74e        0x2 ff
+                0x000000001a00a7a0        0x6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ *fill*         0x000000001a00a7a6        0x2 ff
  .rodata.periph_to_base
-                0x000000001a00a750       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a00a7a8       0x6c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .rodata.InitClkStates
-                0x000000001a00a7bc       0x48 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+                0x000000001a00a814       0x48 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
  .rodata.lpcUarts
-                0x000000001a00a804       0x48 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
- .rodata        0x000000001a00a84c        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
+                0x000000001a00a85c       0x48 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+ .rodata        0x000000001a00a8a4        0x8 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
  .rodata.gpioPinsInit
-                0x000000001a00a854       0xe6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
-                0x000000001a00a854                gpioPinsInit
- *fill*         0x000000001a00a93a        0x2 ff
+                0x000000001a00a8ac       0xe6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+                0x000000001a00a8ac                gpioPinsInit
+ *fill*         0x000000001a00a992        0x2 ff
  .rodata.ultrasonicSensorsIrqMap
-                0x000000001a00a93c        0x3 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
- *fill*         0x000000001a00a93f        0x1 ff
+                0x000000001a00a994        0x3 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+ *fill*         0x000000001a00a997        0x1 ff
  .rodata._setlocale_r.str1.4
-                0x000000001a00a940        0xa /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000001a00a998        0xa /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
                                           0xd (size before relaxing)
  .rodata.str1.4
-                0x000000001a00a94a        0xa /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000001a00a9a2        0xa /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
                                           0x2 (size before relaxing)
  .rodata._puts_r.str1.4
-                0x000000001a00a94a        0x2 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
- *fill*         0x000000001a00a94a        0x2 ff
+                0x000000001a00a9a2        0x2 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
+ *fill*         0x000000001a00a9a2        0x2 ff
  .rodata._vfprintf_r.str1.4
-                0x000000001a00a94c       0x42 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
- *fill*         0x000000001a00a98e        0x2 ff
+                0x000000001a00a9a4       0x42 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+ *fill*         0x000000001a00a9e6        0x2 ff
  .rodata.blanks.8605
-                0x000000001a00a990       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000001a00a9e8       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata.zeroes.8606
-                0x000000001a00a9a0       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000001a00a9f8       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata._ctype_
-                0x000000001a00a9b0      0x101 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-ctype_.o)
-                0x000000001a00a9b0                _ctype_
- *fill*         0x000000001a00aab1        0x3 ff
+                0x000000001a00aa08      0x101 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-ctype_.o)
+                0x000000001a00aa08                _ctype_
+ *fill*         0x000000001a00ab09        0x3 ff
  .rodata._dtoa_r.str1.4
-                0x000000001a00aab4       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+                0x000000001a00ab0c       0x10 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
                                          0x12 (size before relaxing)
- *fill*         0x000000001a00aac4        0x4 ff
+ *fill*         0x000000001a00ab1c        0x4 ff
  .rodata.__mprec_bigtens
-                0x000000001a00aac8       0x28 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a00aac8                __mprec_bigtens
+                0x000000001a00ab20       0x28 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a00ab20                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000000001a00aaf0       0xc8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a00aaf0                __mprec_tens
+                0x000000001a00ab48       0xc8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a00ab48                __mprec_tens
  .rodata.p05.7367
-                0x000000001a00abb8        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000001a00abc4                . = ALIGN (0x4)
+                0x000000001a00ac10        0xc /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000001a00ac1c                . = ALIGN (0x4)
 
-.glue_7         0x000000001a00abc4        0x0
- .glue_7        0x000000001a00abc4        0x0 linker stubs
+.glue_7         0x000000001a00ac1c        0x0
+ .glue_7        0x000000001a00ac1c        0x0 linker stubs
 
-.glue_7t        0x000000001a00abc4        0x0
- .glue_7t       0x000000001a00abc4        0x0 linker stubs
+.glue_7t        0x000000001a00ac1c        0x0
+ .glue_7t       0x000000001a00ac1c        0x0 linker stubs
 
-.vfp11_veneer   0x000000001a00abc4        0x0
- .vfp11_veneer  0x000000001a00abc4        0x0 linker stubs
+.vfp11_veneer   0x000000001a00ac1c        0x0
+ .vfp11_veneer  0x000000001a00ac1c        0x0 linker stubs
 
-.v4_bx          0x000000001a00abc4        0x0
- .v4_bx         0x000000001a00abc4        0x0 linker stubs
+.v4_bx          0x000000001a00ac1c        0x0
+ .v4_bx         0x000000001a00ac1c        0x0 linker stubs
 
-.iplt           0x000000001a00abc4        0x0
- .iplt          0x000000001a00abc4        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
-                0x000000001a00abc4                . = ALIGN (0x4)
+.iplt           0x000000001a00ac1c        0x0
+ .iplt          0x000000001a00ac1c        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
+                0x000000001a00ac1c                . = ALIGN (0x4)
 
-.preinit_array  0x000000001a00abc4        0x0
-                0x000000001a00abc4                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000001a00ac1c        0x0
+                0x000000001a00ac1c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x000000001a00abc4                PROVIDE (__preinit_array_end = .)
+                0x000000001a00ac1c                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x000000001a00abc4        0x4
-                0x000000001a00abc4                PROVIDE (__init_array_start = .)
+.init_array     0x000000001a00ac1c        0x4
+                0x000000001a00ac1c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x000000001a00abc4        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
-                0x000000001a00abc8                PROVIDE (__init_array_end = .)
-                0x000000001a00abc8                . = ALIGN (0x4)
+ .init_array    0x000000001a00ac1c        0x4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+                0x000000001a00ac20                PROVIDE (__init_array_end = .)
+                0x000000001a00ac20                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000001a00abc8                __exidx_start = .
+                0x000000001a00ac20                __exidx_start = .
 
-.ARM.exidx      0x000000001a00abc8        0x8
+.ARM.exidx      0x000000001a00ac20        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000000001a00abc8        0x8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
-                0x000000001a00abd0                __exidx_end = .
-                0x000000001a00abd0                _etext = .
+ .ARM.exidx     0x000000001a00ac20        0x8 /home/mariano/CIAA/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+                0x000000001a00ac28                __exidx_end = .
+                0x000000001a00ac28                _etext = .
 
-.rel.dyn        0x000000001a00abd0        0x0
- .rel.iplt      0x000000001a00abd0        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
+.rel.dyn        0x000000001a00ac28        0x0
+ .rel.iplt      0x000000001a00ac28        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
 
-.data_RAM2      0x0000000010080000        0x0 load address 0x000000001a00abd0
+.data_RAM2      0x0000000010080000        0x0 load address 0x000000001a00ac28
  FILL mask 0xff
  *(.ramfunc.$RAM2)
  *(.ramfunc.$RamLoc40)
@@ -21466,7 +21468,7 @@ END GROUP
  *(.data.$RamLoc40*)
                 0x0000000010080000                . = ALIGN (0x4)
 
-.data_RAM3      0x0000000020000000        0x0 load address 0x000000001a00abd0
+.data_RAM3      0x0000000020000000        0x0 load address 0x000000001a00ac28
  FILL mask 0xff
  *(.ramfunc.$RAM3)
  *(.ramfunc.$RamAHB32)
@@ -21474,7 +21476,7 @@ END GROUP
  *(.data.$RamAHB32*)
                 0x0000000020000000                . = ALIGN (0x4)
 
-.data_RAM4      0x0000000020008000        0x0 load address 0x000000001a00abd0
+.data_RAM4      0x0000000020008000        0x0 load address 0x000000001a00ac28
  FILL mask 0xff
  *(.ramfunc.$RAM4)
  *(.ramfunc.$RamAHB16)
@@ -21482,7 +21484,7 @@ END GROUP
  *(.data.$RamAHB16*)
                 0x0000000020008000                . = ALIGN (0x4)
 
-.data_RAM5      0x000000002000c000        0x0 load address 0x000000001a00abd0
+.data_RAM5      0x000000002000c000        0x0 load address 0x000000001a00ac28
  FILL mask 0xff
  *(.ramfunc.$RAM5)
  *(.ramfunc.$RamAHB_ETB16)
@@ -21496,7 +21498,7 @@ END GROUP
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                _end_uninit_RESERVED = .
 
-.data           0x0000000010000000      0xa74 load address 0x000000001a00abd0
+.data           0x0000000010000000      0xa74 load address 0x000000001a00ac28
  FILL mask 0xff
                 0x0000000010000000                _data = .
  *(vtable)
@@ -21536,7 +21538,7 @@ END GROUP
                 0x0000000010000a74                . = ALIGN (0x4)
                 0x0000000010000a74                _edata = .
 
-.igot.plt       0x0000000010000a74        0x0 load address 0x000000001a00b644
+.igot.plt       0x0000000010000a74        0x0 load address 0x000000001a00b69c
  .igot.plt      0x0000000010000a74        0x0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
 
 .bss_RAM2       0x0000000010080000        0x0
@@ -21757,49 +21759,49 @@ END GROUP
                 0x0000000010007a28                _end_noinit = .
                 0x0000000010007a28                PROVIDE (_pvHeapStart = .)
                 0x0000000010008000                PROVIDE (_vStackTop = (__top_RamLoc32 - 0x0))
-                0xffffffff53ff66e2                PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (Reset_Handler + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+                0xffffffff53ff66d6                PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (Reset_Handler + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(mis_proyectos/firmware_proyecto_final_v1.0/out/firmware_proyecto_final_v1.0.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x39b80
+.debug_info     0x0000000000000000    0x39b97
  .debug_info    0x0000000000000000     0x2699 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
  .debug_info    0x0000000000002699     0x273f mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/serialport.o
  .debug_info    0x0000000000004dd8     0x2b78 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/commandprocessing.o
  .debug_info    0x0000000000007950     0x2b81 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/main.o
  .debug_info    0x000000000000a4d1     0x2031 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/heartbeat.o
  .debug_info    0x000000000000c502     0x2fb0 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
- .debug_info    0x000000000000f4b2     0x2a9b mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
- .debug_info    0x0000000000011f4d      0x301 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
- .debug_info    0x000000000001224e      0xf43 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
- .debug_info    0x0000000000013191     0x11a2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
- .debug_info    0x0000000000014333     0x3147 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
- .debug_info    0x000000000001747a      0xb09 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
- .debug_info    0x0000000000017f83      0x346 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
- .debug_info    0x00000000000182c9      0xad6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
- .debug_info    0x0000000000018d9f     0x39c0 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
- .debug_info    0x000000000001c75f     0x2476 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
- .debug_info    0x000000000001ebd5      0xa5e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
- .debug_info    0x000000000001f633      0xb86 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM/freertos_cm_support.o
- .debug_info    0x00000000000201b9     0x2144 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
- .debug_info    0x00000000000222fd     0x14c3 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
- .debug_info    0x00000000000237c0     0x1366 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
- .debug_info    0x0000000000024b26     0x164f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
- .debug_info    0x0000000000026175      0xaef mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
- .debug_info    0x0000000000026c64     0x18ed mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- .debug_info    0x0000000000028551      0xc3d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
- .debug_info    0x000000000002918e      0xab0 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
- .debug_info    0x0000000000029c3e      0x219 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
- .debug_info    0x0000000000029e57     0x1606 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
- .debug_info    0x000000000002b45d       0x3f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/crp.o
- .debug_info    0x000000000002b49c      0xbd2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/sysinit.o
- .debug_info    0x000000000002c06e       0x74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
- .debug_info    0x000000000002c0e2      0xeaf mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/core/src/sapi_cyclesCounter.o
- .debug_info    0x000000000002cf91     0x27e2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
- .debug_info    0x000000000002f773     0x1d42 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
- .debug_info    0x00000000000314b5      0xfd5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
- .debug_info    0x000000000003248a     0x1a45 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
- .debug_info    0x0000000000033ecf     0x330e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/usb/device/src/sapi_usb_device.o
- .debug_info    0x00000000000371dd      0xbba mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
- .debug_info    0x0000000000037d97     0x1de9 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+ .debug_info    0x000000000000f4b2     0x2ab2 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
+ .debug_info    0x0000000000011f64      0x301 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
+ .debug_info    0x0000000000012265      0xf43 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+ .debug_info    0x00000000000131a8     0x11a2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
+ .debug_info    0x000000000001434a     0x3147 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+ .debug_info    0x0000000000017491      0xb09 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+ .debug_info    0x0000000000017f9a      0x346 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
+ .debug_info    0x00000000000182e0      0xad6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+ .debug_info    0x0000000000018db6     0x39c0 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+ .debug_info    0x000000000001c776     0x2476 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+ .debug_info    0x000000000001ebec      0xa5e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+ .debug_info    0x000000000001f64a      0xb86 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM/freertos_cm_support.o
+ .debug_info    0x00000000000201d0     0x2144 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+ .debug_info    0x0000000000022314     0x14c3 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+ .debug_info    0x00000000000237d7     0x1366 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+ .debug_info    0x0000000000024b3d     0x164f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+ .debug_info    0x000000000002618c      0xaef mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+ .debug_info    0x0000000000026c7b     0x18ed mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ .debug_info    0x0000000000028568      0xc3d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+ .debug_info    0x00000000000291a5      0xab0 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+ .debug_info    0x0000000000029c55      0x219 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+ .debug_info    0x0000000000029e6e     0x1606 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+ .debug_info    0x000000000002b474       0x3f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/crp.o
+ .debug_info    0x000000000002b4b3      0xbd2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/sysinit.o
+ .debug_info    0x000000000002c085       0x74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
+ .debug_info    0x000000000002c0f9      0xeaf mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/core/src/sapi_cyclesCounter.o
+ .debug_info    0x000000000002cfa8     0x27e2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+ .debug_info    0x000000000002f78a     0x1d42 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+ .debug_info    0x00000000000314cc      0xfd5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
+ .debug_info    0x00000000000324a1     0x1a45 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+ .debug_info    0x0000000000033ee6     0x330e mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/usb/device/src/sapi_usb_device.o
+ .debug_info    0x00000000000371f4      0xbba mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
+ .debug_info    0x0000000000037dae     0x1de9 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
 
 .debug_abbrev   0x0000000000000000     0x6b61
  .debug_abbrev  0x0000000000000000      0x2f3 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
@@ -22183,46 +22185,46 @@ OUTPUT(mis_proyectos/firmware_proyecto_final_v1.0/out/firmware_proyecto_final_v1
  .debug_macro   0x0000000000011bd2      0x47d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
  .debug_macro   0x000000000001204f      0x4b1 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
 
-.debug_line     0x0000000000000000    0x1a0de
+.debug_line     0x0000000000000000    0x1a0e1
  .debug_line    0x0000000000000000     0x119b mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o
  .debug_line    0x000000000000119b     0x11e1 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/serialport.o
  .debug_line    0x000000000000237c     0x124f mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/commandprocessing.o
  .debug_line    0x00000000000035cb     0x11e7 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/main.o
  .debug_line    0x00000000000047b2     0x1177 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/heartbeat.o
  .debug_line    0x0000000000005929     0x12a8 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/steppermotor.o
- .debug_line    0x0000000000006bd1     0x126d mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
- .debug_line    0x0000000000007e3e       0xfa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
- .debug_line    0x0000000000007f38      0x4af mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
- .debug_line    0x00000000000083e7      0x9bc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
- .debug_line    0x0000000000008da3     0x10ec mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
- .debug_line    0x0000000000009e8f      0x8f2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
- .debug_line    0x000000000000a781      0x814 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
- .debug_line    0x000000000000af95      0x907 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
- .debug_line    0x000000000000b89c     0x1435 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
- .debug_line    0x000000000000ccd1      0xbc6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
- .debug_line    0x000000000000d897      0x98a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
- .debug_line    0x000000000000e221      0x79f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM/freertos_cm_support.o
- .debug_line    0x000000000000e9c0      0xa74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
- .debug_line    0x000000000000f434      0x876 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
- .debug_line    0x000000000000fcaa      0x9ea mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
- .debug_line    0x0000000000010694      0x9e5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
- .debug_line    0x0000000000011079      0x82c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
- .debug_line    0x00000000000118a5      0xb3d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- .debug_line    0x00000000000123e2      0x747 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
- .debug_line    0x0000000000012b29      0x7a4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
- .debug_line    0x00000000000132cd      0x705 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
- .debug_line    0x00000000000139d2      0xb8f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
- .debug_line    0x0000000000014561       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/crp.o
- .debug_line    0x00000000000145a5      0x813 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/sysinit.o
- .debug_line    0x0000000000014db8       0x61 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
- .debug_line    0x0000000000014e19      0x8ee mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/core/src/sapi_cyclesCounter.o
- .debug_line    0x0000000000015707      0xced mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
- .debug_line    0x00000000000163f4      0xab1 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
- .debug_line    0x0000000000016ea5      0x908 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
- .debug_line    0x00000000000177ad      0x9ed mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
- .debug_line    0x000000000001819a      0xb68 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/usb/device/src/sapi_usb_device.o
- .debug_line    0x0000000000018d02      0x929 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
- .debug_line    0x000000000001962b      0xab3 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
+ .debug_line    0x0000000000006bd1     0x1270 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/adc.o
+ .debug_line    0x0000000000007e41       0xfa mis_proyectos/firmware_proyecto_final_v1.0/out/libs/cmsis_core//src/armv7m_startup.o
+ .debug_line    0x0000000000007f3b      0x4af mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sys_newlib//src/system.o
+ .debug_line    0x00000000000083ea      0x9bc mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/MemMang/heap_4.o
+ .debug_line    0x0000000000008da6     0x10ec mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/queue.o
+ .debug_line    0x0000000000009e92      0x8f2 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/list.o
+ .debug_line    0x000000000000a784      0x814 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/static_provider.o
+ .debug_line    0x000000000000af98      0x907 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/hooks.o
+ .debug_line    0x000000000000b89f     0x1435 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/tasks.o
+ .debug_line    0x000000000000ccd4      0xbc6 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/timers.o
+ .debug_line    0x000000000000d89a      0x98a mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM4F/port.o
+ .debug_line    0x000000000000e224      0x79f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/freertos/source/portable/ARM_CM/freertos_cm_support.o
+ .debug_line    0x000000000000e9c3      0xa74 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+ .debug_line    0x000000000000f437      0x876 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+ .debug_line    0x000000000000fcad      0x9ea mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+ .debug_line    0x0000000000010697      0x9e5 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+ .debug_line    0x000000000001107c      0x82c mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+ .debug_line    0x00000000000118a8      0xb3d mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ .debug_line    0x00000000000123e5      0x747 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+ .debug_line    0x0000000000012b2c      0x7a4 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+ .debug_line    0x00000000000132d0      0x705 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+ .debug_line    0x00000000000139d5      0xb8f mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+ .debug_line    0x0000000000014564       0x44 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/crp.o
+ .debug_line    0x00000000000145a8      0x813 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/sysinit.o
+ .debug_line    0x0000000000014dbb       0x61 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
+ .debug_line    0x0000000000014e1c      0x8ee mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/core/src/sapi_cyclesCounter.o
+ .debug_line    0x000000000001570a      0xced mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_uart.o
+ .debug_line    0x00000000000163f7      0xab1 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_timer.o
+ .debug_line    0x0000000000016ea8      0x908 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_adc.o
+ .debug_line    0x00000000000177b0      0x9ed mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/src/sapi_gpio.o
+ .debug_line    0x000000000001819d      0xb68 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/soc/peripherals/usb/device/src/sapi_usb_device.o
+ .debug_line    0x0000000000018d05      0x929 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/board/src/sapi_board.o
+ .debug_line    0x000000000001962e      0xab3 mis_proyectos/firmware_proyecto_final_v1.0/out/libs/sapi/sapi_v0.5.2/external_peripherals/ultrasonic/hcsr04/src/sapi_ultrasonic_hcsr04.o
 
 .debug_str      0x0000000000000000    0x30945
  .debug_str     0x0000000000000000    0x28063 mis_proyectos/firmware_proyecto_final_v1.0/out/mis_proyectos/firmware_proyecto_final_v1.0/src/pid.o

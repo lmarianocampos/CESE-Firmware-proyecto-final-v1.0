@@ -198,15 +198,15 @@ void commandProcessingTask(void * taskParmPtr) {
 						printf("Set Point:%d\n",sp);
 						taskEXIT_CRITICAL();
 						switch(sp){
-									case 0: 	pid.setPoint = 0.0000000;
+									case 0: 	pid.setPoint = 0.69000;
 									break;
-									case 25: 	pid.setPoint = 0.277750;
+									case 25: 	pid.setPoint = 0.72000;
 									break;
-									case 50: 	pid.setPoint = 0.43550;
+									case 50: 	pid.setPoint = 0.75000;
 									break;
-									case 75: 	pid.setPoint = 0.653250;
+									case 75: 	pid.setPoint = 0.80000;
 									break;
-									case 100: 	pid.setPoint = 0.97100;
+									case 100: 	pid.setPoint = 0.85200;
 									break;
 									default:
 										break;

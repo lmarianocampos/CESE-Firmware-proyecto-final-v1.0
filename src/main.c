@@ -75,7 +75,7 @@ int main(void)
    serialPortForInterruptInit();
    // inicializo el motor PaP
    stepperMotorInit(&stepper,400,GPIO2,GPIO1,GPIO0,GPIO3,GPIO4,GPIO5,0.9 );
-   startPid(&pid,0, 0,0.00000, 0.00000,0.00000,0.00000,1.20000,0.00000,1.00000, 0.006666, 0.00000 );
+   startPid(&pid,0, 0,0.00000, 0.00000,0.00000,0.00000,1.20000,0.00000,1.000, 0.05555, 0.00000);
    adcStart();
    printf( "Trabajo Final con freeRTOS y sAPI.\n" );
 

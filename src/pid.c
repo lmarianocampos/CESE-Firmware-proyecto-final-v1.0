@@ -59,7 +59,7 @@ void startPid(Pid_t *pid,uint16_t sPoint, uint16_t sensorPresion,float setPoint,
 	pid->setPoint = setPoint;
 	pid->inPut = inPut;
 	pid->error = error;
-	pid->iTerm = iTerm;
+	pid->iTerm =iTerm;
 	pid->outMax = outMax;
 	pid->outMin = outMin;
 	pid->kp = kp;

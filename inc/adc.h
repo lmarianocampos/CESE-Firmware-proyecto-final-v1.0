@@ -24,8 +24,8 @@ extern "C" {
 #endif
 
 /*=====[Definition macros of public constants]===============================*/
-#define FILTRO_PROMEDIO_MOVIL   5
-#define UNSEGUNDO 100
+#define FILTRO_PROMEDIO_MOVIL   10
+#define UNSEGUNDO 50
 /*=====[Public function-like macros]=========================================*/
 /*=====[Definitions of public data types]====================================*/
 
